@@ -505,8 +505,7 @@ button:focus {
   align-items: center;
 
   background-color: hsl(0, 0%, 18%);
-  padding: clamp(0.75rem, calc(0.45rem + 1.5vw), 1.5rem)
-    clamp(1rem, calc(0.6rem + 2vw), 2rem);
+  padding: 1.4rem;
 
   cursor: pointer;
 }
@@ -556,8 +555,7 @@ button:focus {
 }
 
 .answer p {
-  margin: clamp(0.75rem, calc(0.45rem + 1.5vw), 1.5rem)
-    clamp(1rem, calc(0.6rem + 2vw), 2rem);
+  margin: 1.4rem;
 }
 
 .answer p + p {
