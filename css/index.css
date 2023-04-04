@@ -134,7 +134,7 @@ button:focus {
 
 .btn--primary {
   background-color: var(--clr-primary-400);
-  
+
   color: var(--clr-neutral-400);
 }
 
@@ -295,7 +295,7 @@ button:focus {
   --easing: ease;
 
   position: absolute;
-  top: 0.25rem;
+  top: 0.4rem;
   left: var(--left-spacer);
 
   line-height: 1.1;
@@ -361,7 +361,7 @@ button:focus {
   border-right: 5px solid var(--clr-neutral-400);
 
   transform-origin: 50% 50%;
-  transform: rotate(45deg) scale(.5);
+  transform: rotate(45deg) scale(0.5);
 }
 
 /*****************************\

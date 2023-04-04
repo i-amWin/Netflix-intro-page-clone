@@ -1,17 +1,21 @@
-const emailLabel = document.getElementById("email-label");
-const email = document.getElementById("email");
+const emailLabels = document.querySelectorAll(".email-label");
+const emails = document.querySelectorAll(".email-input");
 const toggleBtns = document.querySelectorAll(".js-toggle-faq");
 
 // CTA EMAIL INPUT ANIMATION
-email.addEventListener("focus", function () {
-  emailLabel.classList.add("slide-up");
-});
+for (let i = 0; i < emails.length; i++) {
+  emails[i].addEventListener("focus", function () {
+    emailLabels[i].classList.add("slide-up");
+  });
+}
 
-email.addEventListener("blur", function () {
-  if (email.value) return;
+for (let i = 0; i < emails.length; i++) {
+  emails[i].addEventListener("blur", function () {
+    if (emails[i].value) return;
 
-  emailLabel.classList.remove("slide-up");
-});
+    emailLabels[i].classList.remove("slide-up");
+  });
+}
 
 // SETTING HEIGHT OF EACH FAQ ANSWER
 
