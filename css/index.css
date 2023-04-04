@@ -113,9 +113,16 @@ button:focus {
   border: 0;
   outline: transparent;
 
-  padding: 0.4em 0.7em;
+  padding-inline: 0.7em;
+  height: 2rem;
+  width: fit-content;
 
-  line-height: normal;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  line-height: 2rem;
+  vertical-align: middle;
   font-weight: 600;
 
   border-radius: 5px;
@@ -123,13 +130,13 @@ button:focus {
 
 @media screen and (min-width: 38em) {
   .btn {
-    padding: 0.5em 1em;
+    height: 2.4rem;
   }
 }
 
 .btn--primary {
   background-color: var(--clr-primary-400);
-
+  
   color: var(--clr-neutral-400);
 }
 
